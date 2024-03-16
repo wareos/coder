@@ -3,8 +3,17 @@ body {
   margin: 0;
 }
 
+editor {
+  display: none;
+}
+
 editor iframe {
   height: 100%;
   width: 50%
 }
-  
+
+editor textarea {
+  height: 100%;
+  outline: none;
+  width: 50%
+}
