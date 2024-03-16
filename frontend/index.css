@@ -9,6 +9,10 @@ editor {
   width: 100%;
 }
 
+header {
+  background: #ccc;
+}
+
 editor iframe {
   background: whitesmoke;
   height: 100%;
@@ -20,3 +24,6 @@ editor textarea {
   outline: none;
   width: 50%
 }
+
+
+
