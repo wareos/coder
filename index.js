@@ -178,7 +178,7 @@ window.onload = () => {
 
 function init() {
 
-  dom.body.onclick = (event) => on.touch.tap(event, "tap");
+  //dom.body.onclick = (event) => on.touch.tap(event, "tap");
   
 }
 
