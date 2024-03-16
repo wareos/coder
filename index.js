@@ -14,7 +14,7 @@ window.onload = () => {
 
     body: document.body,
     
-    boot: documnet.getElementbyId('boot'),
+    boot: document.getElementbyId('boot'),
     
     "style": document.getElementById("css"),
 
