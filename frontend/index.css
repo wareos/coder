@@ -1,5 +1,6 @@
 body {
   background: whitesmoke;
+  display: flex;
   height: 100%;
   margin: 0;
   overflow: hidden;
@@ -8,6 +9,7 @@ body {
 
 editor {
   display: flex;
+  flex: 1;
   height: 100%;
   width: 100%;
 }
@@ -19,14 +21,13 @@ header {
 
 editor iframe {
   background: whitesmoke;
+  border: none;
   flex: 1;
-  outline: none;
   width: 50%
 }
 
 editor textarea {
   flex: 1;
-  height: 100%;
   outline: none;
   width: 50%
 }
