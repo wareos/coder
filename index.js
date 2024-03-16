@@ -1,11 +1,3 @@
-auth.config = {
-  apiKey: "AIzaSyCSjuuLaxf0lJ-vqQtJ7d212PN-dVaBxq4",
-  authDomain: "codepencil-demo.firebaseapp.com",
-  projectId: "codepencil-demo",
-  messagingSenderId: "410760136051",
-  appId: "1:410760136051:web:a3929b3a4a541cbffeb106"
-};
-
 window.api = {
   endpoint: "https://api.uios.computer"
 };
@@ -189,24 +181,8 @@ function init() {
     return m.includes("#") ||
       (n > -1);
   };
-  
-  firebase.initializeApp(auth.config);
 
   dom.body.onclick = (event) => on.touch.tap(event, "tap");
-
-  (dom.boot.dataset.path ? dom.boot.dataset.path : window.location.pathname).router().then(e => {
-    firebase.auth().onAuthStateChanged(user => {
-      auth.change(user).then(user => {
-        //console.log({user});
-        if(user) {
-          
-        } else {
-          localStorage.removeItem('githubAccessToken');
-        }
-        dom.body.dataset.load = "ed";
-      })
-    });
-  });
   
 }
 
@@ -310,23 +286,7 @@ window.mvc.c ? null
           'redirect_uri': 'https://codepen.io/anoniiimous/pen/WNMvNoY'
         });
         
-        firebase
-          .auth()
-          .signInWithPopup(provider)
-          .then((result) => {
-            var credential = result.credential;
-            var token = credential.accessToken;
-            var user = result.user;
-            console.log({result});
-            localStorage.setItem('githubAccessToken',token);
-          })
-          .catch((error) => {
-            var errorCode = error.code;
-            var errorMessage = error.message;
-            var email = error.email;
-            var credential = error.credential;
-            console.log({error});
-          });
+
       }
     }
   }
