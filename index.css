@@ -1,0 +1,404 @@
+/*SHELL*/
+
+html {
+  width: 100%;
+
+  height: 100%;
+}
+
+body {
+  margin: 0;
+
+  width: 100%;
+
+  height: 100%;
+
+  position: relative;
+
+  font-family: Arial;
+
+  user-select: none;
+
+  overflow: hidden;
+}
+
+popup {
+  
+}
+
+/*HEADER*/
+.bg-header {
+  background: #1e1f26;
+}
+.header {
+  width: 100%;
+
+  height: 50px;
+
+  background: #1e1f26;
+
+  display: flex;
+  display: -webkit-flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+}
+
+.header .menu > * {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.header .logo {
+  width: 50px;
+
+  height: 50px;
+
+  padding: 0 5px;
+
+  display: inline-block;
+
+  vertical-align: top;
+
+  position: relative;
+
+  text-align: center;
+}
+
+.header .logo:before {
+  content: "";
+
+  display: block;
+
+  width: 3px;
+  height: 20px;
+
+  background: white;
+
+  border-radius: 5px;
+
+  position: absolute;
+
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  margin: auto;
+
+  transform: rotate(20deg);
+}
+
+.header .logo .side {
+  position: relative;
+
+  width: 25px;
+  height: 50px;
+
+  display: inline-block;
+
+  vertical-align: top;
+}
+
+.header .logo .side:before,
+.header .logo .side:after {
+  content: "";
+
+  display: block;
+
+  width: 3px;
+  height: 10px;
+
+  background: white;
+
+  position: absolute;
+
+  transform: rotate(45deg);
+
+  right: 10px;
+
+  border-radius: 5px;
+
+  margin: auto;
+}
+
+.header .logo .side:before {
+  bottom: 18px;
+}
+
+.header .logo .side:after {
+  top: 18px;
+
+  transform: rotate(-45deg);
+}
+
+.header .logo .side.left {
+  transform: scaleX(-1);
+}
+
+.header .info {
+  height: 50px;
+
+  display: inline-flex;
+
+  vertical-align: top;
+
+  justify-content: center;
+
+  flex-direction: column;
+}
+
+.header .info .project-name {
+  color: white;
+
+  font-size: 18px;
+
+  font-weight: bolder;
+}
+
+.header .info .project-user {
+  color: #9b9dad;
+
+  font-size: 14px;
+}
+
+.header .menu {
+  height: 30px;
+
+  margin: 0 10px;
+}
+
+.header .menu > * {
+  display: inline-block;
+}
+
+.header .menu .user {
+  width: 30px;
+  height: 30px;
+
+  border-radius: 50%;
+
+  background: #333;
+}
+
+/*HEADER*/
+
+/*SHELL*/
+main { 
+  display: flex;
+}
+
+/*CODE*/
+
+.editor-div {
+  background: #1d1e22;
+}
+
+.editor-div .editor-header {
+  height: 36px;
+
+  display: flex;
+
+  display: -webkit-flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  background: rgba(0, 0, 0, 0.1);
+
+  border-bottom: 1px solid #444;
+}
+
+.editor-div .editor-header .more {
+  width: 30px;
+  height: 20px;
+
+  background: #444857;
+}
+
+.editor-section .section-div {
+  position: relative;
+
+  width: 100%;
+
+  height: 100%;
+}
+
+.section-div .CodeMirror {
+  width: 100%;
+  height: 100%;
+}
+
+.layout-side .resizer {
+  cursor: col-resize;
+}
+
+/*LAYOUT SIDE*/
+
+.editor {
+  width: 100%;
+  height: 100%;
+}
+
+.editor-div {
+  width: 100%;
+  height: calc((100% - 9px) / 3);
+}
+
+.editor-header {
+  color: white;
+
+  padding: 0 5px;
+}
+
+.editor-header > :first-child {
+  font-weight: bolder;
+}
+
+.editor-section {
+  width: calc(100%);
+
+  height: calc(100% - 37px);
+}
+
+.editor-resizer {
+  width: 100%;
+  height: 3px;
+
+  background: #444857;
+}
+
+/*LAYOUT SIDE*/
+
+/*LAYOUT LEFT*/
+
+.layout-side.layout-left aside {
+  width: 400px;
+
+  height: calc(100% - 0px);
+
+  background: #333;
+
+  position: relative;
+
+  top: 0;
+
+  left: 0;
+
+  bottom: 0;
+
+  right: 0;
+
+  padding-right: 0px;
+}
+
+.layout-side aside:after {
+  content: "";
+
+  display: block;
+
+  display: none;
+
+  width: 14px;
+
+  height: 100%;
+
+  top: 0;
+
+  position: absolute;
+
+  cursor: w-resize;
+
+  background: #444857;
+
+  z-index: 12345;
+}
+
+.layout-side.layout-left aside:after {
+  right: 0;
+}
+
+.layout-side.layout-left #resizer {
+  width: 14px;
+
+  background: #444857;
+}
+
+.layout-side.layout-left main {
+  height: calc(100% - 0px);
+
+  background: transparent;
+
+  position: relative;
+
+  flex-grow: 1;
+}
+
+/*LAYOUT LEFT*/
+
+/*LAYOUT TOP*/
+
+.layout-top aside {
+  width: 100%;
+
+  height: 350px;
+
+  min-height: 125px;
+
+  background: #333;
+
+  position: relative;
+
+  top: 0;
+
+  left: 0;
+
+  bottom: 0;
+
+  right: 0;
+}
+
+/*LAYOUT TOP*/
+
+/*PREVIEW*/
+
+#pages-editor .preview {
+  flex: 1;
+}
+
+#pages-editor .preview .preview-code {
+  width: 100%;
+  height: 100%;
+
+  background: white;
+
+  border: 0;
+}
+
+/*PREVIEW*/
+
+/*CODE*/
+
+body.dragging iframe {
+  pointer-events: none;
+}
+
+[placholder][value] {
+  display: none;
+}
+
+[data-before]:before {
+  content: attr(data-before);
+}
+
+[data-after]:after {
+  content: attr(data-after);
+}
+
+[placeholder]:empty:before {
+  content: attr(placeholder);
+}
