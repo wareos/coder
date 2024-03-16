@@ -178,11 +178,6 @@ window.onload = () => {
 
 function init() {
 
-  window.rout.ing = (href, GOT, n, m = GOT[n], root = GOT[0]) => {
-    return m.includes("#") ||
-      (n > -1);
-  };
-
   dom.body.onclick = (event) => on.touch.tap(event, "tap");
   
 }
