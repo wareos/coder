@@ -14,9 +14,10 @@ editor {
   width: 100%;
 }
 
-header {
+body > header {
   background: #ccc;
   display: flex;
+  flex-direction: row;
   height: 50px;
 }
 
