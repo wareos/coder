@@ -12,6 +12,7 @@ editor {
 
 header {
   background: #ccc;
+  height: 50px;
 }
 
 editor iframe {
