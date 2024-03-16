@@ -13,7 +13,8 @@ window.onload = () => {
   window.dom = {
 
     body: document.body,
-    boot: byId('boot'),
+    
+    boot: documnet.getElementbyId('boot'),
     
     "style": document.getElementById("css"),
 
