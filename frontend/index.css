@@ -16,6 +16,7 @@ editor {
 
 header {
   background: #ccc;
+  display: flex;
   height: 50px;
 }
 
