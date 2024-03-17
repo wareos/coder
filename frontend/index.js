@@ -16,6 +16,8 @@ window.onload = () => {
 
     "code":  document.getElementById("code"),
 
+    "htm": document.getElementById('htm-editor'),
+
     "html": document.getElementById('html-editor'),
 
     "css": document.getElementById('css-editor'),
@@ -50,6 +52,25 @@ window.onload = () => {
 
   pvw();
 
+
+
+  cm.htm = CodeMirror(dom.htm, {
+
+    lineNumbers: true,
+
+    lineWrapping: true,
+
+    htmlMode: true,
+
+    mode: 'xml',  
+
+    styleActiveLine: true,
+
+    theme: 'abcdef',
+
+    matchBrackets: true
+
+  });
   
 
   cm.html = CodeMirror(dom.html, {
