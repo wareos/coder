@@ -30,6 +30,10 @@ body[data-theme="dark"] textarea {
     justify-content: center;
   }
 
+  iframe {
+    border: 0;
+  }
+
   txt {
     justify-content: center;
   }
