@@ -16,7 +16,7 @@ window.onload = () => {
 
     "code":  document.getElementById("code"),
 
-    "htm": document.getElementById('htm-editor'),
+    "htm": document.getElementById('iframe-window'),
 
     "html": document.getElementById('html-editor'),
 
