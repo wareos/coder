@@ -8,6 +8,14 @@ body {
   width: 100%
 }
 
+@media {
+  ico {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+}
+
 editor {
   display: flex;
   flex: 1;
