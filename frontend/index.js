@@ -50,7 +50,7 @@ window.onload = () => {
 
   pvw();
 
-  cm.htm = CodeMirror(dom.htm, {
+  cm.htm = CodeMirror(document.getElementById("editor"), {
 
     lineNumbers: true,
 
