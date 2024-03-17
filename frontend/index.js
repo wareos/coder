@@ -247,9 +247,9 @@ function pvw() {
 
   dom.iframe.code.style = dom.iframe.code.head.querySelector("style");
 
-  dom.iframe.code.body = document
-    .getElementById("preview-code")
-    .contentDocument.querySelector("body");
+  //dom.iframe.code.body = document
+    //.getElementById("preview-code")
+    //.contentDocument.querySelector("body");
 }
 
 function upd() {
