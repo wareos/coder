@@ -24,7 +24,6 @@ body > header ico:not([style]) {
 }
 
 line.resizer {
-  flex: 1;
   display: flex;
   width: 20px;
 }
