@@ -177,15 +177,11 @@ function pvw() {
 function upd() {
   pvw();
 
-  var html = cm.html.getValue();
+  var htm = cm.htm.getValue();
 
-  var css = cm.css.getValue();
+  var page = getPageURL(htm, '', '');
 
-  var js = cm.js.getValue();
-
-  var page = getPageURL(html, css, js);
-
-  console.log({html, css, js}, page)
+  console.log({html, page})
 
   dom.iframe.code.style.textContent = css;
 
