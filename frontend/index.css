@@ -65,6 +65,14 @@ editor {
   width: 100%;
 }
 
+editor textarea {
+  flex: 1;
+}
+
+editor ifrane {
+  flex: 1;
+}
+
 line.resizer {
   background-color: #555;
   height: 100%;
