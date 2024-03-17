@@ -120,9 +120,4 @@ body > header {
  border-bottom: 2px solid;
  right: -8px;
  top: 3px
-} 
-
-.CodeMirror {
-  display: flex;
-  flex: 1;
 }
