@@ -170,7 +170,7 @@ function upd() {
 
   console.log({htm, page})
 
-  dom.iframe.code.style.textContent = css;
+  //dom.iframe.code.style.textContent = css;
 
   dom.iframe.code.elem.src = page;
 }
