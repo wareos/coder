@@ -79,6 +79,7 @@ line.resizer {
 }
 
 body > header {
+  align-items: center;
   background: #000;
   display: flex;
   flex-direction: row;
