@@ -48,11 +48,7 @@ window.onload = () => {
 
   };
 
-  
-
   pvw();
-
-
 
   cm.htm = CodeMirror(dom.htm, {
 
@@ -71,81 +67,12 @@ window.onload = () => {
     matchBrackets: true
 
   });
-  
 
-  cm.html = CodeMirror(dom.html, {
-
-    lineNumbers: true,
-
-    lineWrapping: true,
-
-    htmlMode: true,
-
-    mode: 'xml',  
-
-    styleActiveLine: true,
-
-    theme: 'abcdef',
-
-    matchBrackets: true
-
-  });
-
-  cm.html.on("change",(change) => { 
+  cm.htm.on("change",(change) => { 
 
     upd();
 
   });
-
-  
-
-  cm.css = CodeMirror(dom.css, {
-
-    lineNumbers: true,
-
-    lineWrapping: true,
-
-    mode: 'css',  
-
-    styleActiveLine: true,
-
-    theme: 'abcdef',
-
-    matchBrackets: true
-
-  });
-
-  cm.css.on("change",(change) => { 
-
-    upd();
-
-  });
-
-  
-
-  cm.js = CodeMirror(dom.js, {
-
-    lineNumbers: true,
-
-    lineWrapping: true,
-
-    mode: 'javascript',  
-
-    styleActiveLine: true,
-
-    theme: 'abcdef',
-
-    matchBrackets: true
-
-  });
-
-  cm.js.on("change",(change) => {
-
-    upd();
-
-  });
-
-  
 
   /*RESIZER*/
 
