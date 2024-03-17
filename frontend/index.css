@@ -13,6 +13,10 @@ body[data-theme="dark"] {
   color: white;
 }
 
+body[data-theme="dark"] textarea {
+  color: white;
+}
+
 @media {
   avi {
     align-items: center;
