@@ -150,7 +150,7 @@ window.onload = () => {
 
       m_pos = e.x;
 
-      body.classList.add('dragging');
+      document.body.classList.add('dragging');
 
       document.addEventListener("mousemove", resize, false);
 
@@ -160,7 +160,7 @@ window.onload = () => {
 
   document.addEventListener("mouseup", function(){
 
-    body.classList.remove('dragging');
+    document.body.classList.remove('dragging');
 
     document.removeEventListener("mousemove", resize, false);
 
