@@ -8,6 +8,11 @@ body {
   width: 100%
 }
 
+body[data-theme="dark"] {
+  background: black;
+  color: white;
+}
+
 @media {
   avi {
     align-items: center;
