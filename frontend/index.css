@@ -9,6 +9,12 @@ body {
 }
 
 @media {
+  avi {
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+  }
+  
   ico {
     align-items: center;
     display: inline-flex;
