@@ -185,6 +185,8 @@ function upd() {
 
   var page = getPageURL(html, css, js);
 
+  console.log({html, css, js}, page)
+
   dom.iframe.code.style.textContent = css;
 
   dom.iframe.code.elem.src = page;
