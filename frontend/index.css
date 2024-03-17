@@ -35,6 +35,11 @@ body[data-theme="dark"] textarea {
     outline: none;
   }
 
+  textarea {
+    border: 0;
+    outline: 0;
+  }
+
   txt {
     justify-content: center;
   }
