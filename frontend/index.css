@@ -121,3 +121,8 @@ body > header {
  right: -8px;
  top: 3px
 } 
+
+.CodeMirror {
+  display: flex;
+  flex: 1;
+}
