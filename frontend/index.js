@@ -14,7 +14,7 @@ window.onload = () => {
     
     "style": document.getElementById("css"),
 
-    "code":  document.getElementById("code"),
+    "code":  document.getElementById("editor"),
 
     "htm": document.getElementById('editor'),
 
