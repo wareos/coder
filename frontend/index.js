@@ -9,7 +9,8 @@ window.onload = () => {
   window.dom = {
 
     body: document.body,
-    boot: byId('boot'),
+    
+    boot: document.getElementById('boot'),
     
     "style": document.getElementById("css"),
 
