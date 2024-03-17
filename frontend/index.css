@@ -91,14 +91,14 @@ editor iframe {
   background: transparent;
   border: none;
   flex: 1;
-  width: 50%
+  width: 100%
 }
 
 editor textarea {
   background: transparent;
   flex: 1;
   outline: none;
-  width: 50%
+  width: 100%
 }
 
 
