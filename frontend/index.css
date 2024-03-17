@@ -46,13 +46,14 @@ body > header {
 }
 
 editor iframe {
-  background: whitesmoke;
+  background: transparent;
   border: none;
   flex: 1;
   width: 50%
 }
 
 editor textarea {
+  background: transparent;
   flex: 1;
   outline: none;
   width: 50%
