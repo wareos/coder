@@ -17,6 +17,12 @@ body[data-theme="dark"] textarea {
   color: white;
 }
 
+line.resizer {
+  flex: 1;
+  display: flex;
+  width: 20px;
+}
+
 @media {
   avi {
     align-items: center;
