@@ -9,7 +9,7 @@ body {
 }
 
 body[data-theme="dark"] {
-  background: black;
+  background: #111;
   color: white;
 }
 
