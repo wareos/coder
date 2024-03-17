@@ -240,8 +240,8 @@ function pvw() {
   dom.iframe.code.doc = document.getElementById("iframe").contentDocument;
 
   dom.iframe.code.head = document
-    .getElementById("preview-code")
-    .contentDocument.querySelector("iframe");
+    .getElementById("iframe")
+    .contentDocument.querySelector("head");
 
   dom.iframe.code.head.innerHTML = '<style id="style"></style>';
 
