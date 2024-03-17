@@ -61,7 +61,7 @@ editor {
 }
 
 line.resizer {
-  background-color: #111;
+  background-color: #555;
   flex: 1;
   height: 100%;
   width: 20px;
