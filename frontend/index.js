@@ -8,32 +8,19 @@ window.onload = () => {
 
   window.dom = {
 
-    body: document.body,
-    
-    boot: document.getElementById('boot'),
-    
+    body: document.body,    
+    boot: document.getElementById('boot'),    
     "style": document.getElementById("css"),
-
     "code":  document.getElementById("editor"),
-
     "htm": document.getElementById('editor'),
-
     "html": document.getElementById('html-editor'),
-
     "css": document.getElementById('css-editor'),
-
     "js": document.getElementById('js-editor'),
-
     "resize": {
-
       "code": document.getElementById("resizer"),
-
       "html": document.getElementById('html-resizer'),
-
       "css": document.getElementById('css-resizer'),
-
       "js": document.getElementById('js-resizer')
-
     },
 
     "iframe": {
