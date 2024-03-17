@@ -59,6 +59,13 @@ editor {
   width: 100%;
 }
 
+line.resizer {
+  background-color: #111;
+  flex: 1;
+  height: 100%;
+  width: 20px;
+}
+
 body > header {
   background: #000;
   display: flex;
