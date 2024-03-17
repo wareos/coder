@@ -237,7 +237,7 @@ function getPageURL(html, css, js) {
 }
 
 function pvw() {
-  dom.iframe.code.doc = document.getElementById("preview-code").contentDocument;
+  dom.iframe.code.doc = document.getElementById("iframe").contentDocument;
 
   dom.iframe.code.head = document
     .getElementById("preview-code")
