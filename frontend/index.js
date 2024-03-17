@@ -239,9 +239,9 @@ function getPageURL(html, css, js) {
 function pvw() {
   dom.iframe.code.doc = document.getElementById("iframe").contentDocument;
 
-  //dom.iframe.code.head = document
-    //.getElementById("preview-code")
-    //.contentDocument.querySelector("head");
+  dom.iframe.code.head = document
+    .getElementById("preview-code")
+    .contentDocument.querySelector("iframe");
 
   dom.iframe.code.head.innerHTML = '<style id="style"></style>';
 
