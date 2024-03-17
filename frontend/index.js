@@ -173,34 +173,10 @@ window.onload = () => {
 };
 
 function init() {
-
-  window.rout.ing = (href, GOT, n, m = GOT[n], root = GOT[0]) => {
-    return m.includes("#") ||
-      (n > -1);
-  };
-  
-  firebase.initializeApp(auth.config);
-
-  dom.body.onclick = (event) => on.touch.tap(event, "tap");
-
-  (dom.boot.dataset.path ? dom.boot.dataset.path : window.location.pathname).router().then(e => {
-    firebase.auth().onAuthStateChanged(user => {
-      auth.change(user).then(user => {
-        //console.log({user});
-        if(user) {
-          
-        } else {
-          localStorage.removeItem('githubAccessToken');
-        }
-        dom.body.dataset.load = "ed";
-      })
-    });
-  });
-  
+  console.log('Initialized...');
 }
 
-
-                     function getBlobURL(code, type) {
+function getBlobURL(code, type) {
   const blob = new Blob([code], { type });
 
   return URL.createObjectURL(blob);
