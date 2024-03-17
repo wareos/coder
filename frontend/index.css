@@ -18,6 +18,11 @@ body[data-theme="dark"] textarea {
   color: white;
 }
 
+body > header ico:not([style]) {
+  height: 50px;
+  width: 50px;
+}
+
 line.resizer {
   flex: 1;
   display: flex;
