@@ -234,10 +234,10 @@ function getPageURL(html, css, js) {
 }
 
 function pvw() {
-  dom.iframe.code.doc = document.getElementById("iframe").contentDocument;
+  dom.iframe.code.doc = document.getElementById("iframe-window").contentDocument;
 
   dom.iframe.code.head = document
-    .getElementById("iframe")
+    .getElementById("iframe-window")
     .contentDocument.querySelector("head");
 
   dom.iframe.code.head.innerHTML = '<style id="style"></style>';
