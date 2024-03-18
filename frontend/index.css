@@ -78,7 +78,7 @@ editor wrap {
 }
 
 editor wrap div { 
-  height: 100%;
+  flex: 1;
 }
 
 editor iframe {
