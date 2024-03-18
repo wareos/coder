@@ -74,10 +74,12 @@ editor {
 }
 
 editor wrap {
+  display: flex;
   flex: 1;
 }
 
 editor wrap div {
+  display: flex;
   flex: 1;
 }
 
