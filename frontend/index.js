@@ -171,5 +171,5 @@ function upd() {
   console.log({htm, page})
 
   //dom.iframe.code.style.textContent = css;
-  document.getElementById('editor').src = page;
+  document.getElementById('iframe').src = page;
 }
