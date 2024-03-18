@@ -146,6 +146,145 @@
      top: 3px
     }
       </style>
+    <style>
+      body {
+  background: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  font-family: Arial;
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  width: 100%
+}
+
+body[data-theme="dark"] {
+  background: #111;
+  color: white;
+}
+
+body[data-theme="dark"] textarea {
+  color: white;
+}
+
+body > header ico:not([style]) {
+  height: 50px;
+  width: 50px;
+}
+
+body > header avi {
+  border: 1px solid;
+  border-radius: 50%;
+  box-sizinb: border-box;
+  margin-left: auto;
+  height: 30px;
+  width: 30px;
+}
+
+line.resizer {
+  display: flex;
+  width: 20px;
+}
+
+@media {
+  avi {
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+  }
+  
+  ico {
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+  }
+
+  iframe {
+    border: 0;
+    outline: none;
+  }
+
+  textarea {
+    border: 0;
+    outline: 0;
+    resize: none;
+  }
+
+  txt {
+    justify-content: center;
+  }
+}
+
+editor {
+  display: flex;
+  flex: 1;
+  height: 100%;
+  width: 100%;
+}
+
+editor wrap {
+  flex: 1;
+}
+
+editor wrap .CodeMirror { 
+  height: 100%;
+}
+
+editor iframe {
+  background: white;
+  flex: 1;
+}
+
+line.resizer {
+  background-color: #555;
+  height: 100%;
+  width: 20px;
+}
+
+body > header {
+  align-items: center;
+  background: #000;
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+}
+
+.gg-code-slash {
+ display: block;
+ position: relative;
+ box-sizing: border-box;
+ transform: rotate(15deg) scale(var(--ggs,1));
+ width: 2px;
+ height: 16px;
+ background: currentColor
+}
+
+.gg-code-slash::after,
+.gg-code-slash::before {
+ content: "";
+ display: block;
+ box-sizing: border-box;
+ position: absolute;
+ width: 8px;
+ height: 8px;
+ transform: rotate(-60deg)
+}
+
+.gg-code-slash::before {
+ border-left: 2px solid;
+ border-top: 2px solid;
+ left: -8px;
+ top: 5px
+}
+
+.gg-code-slash::after {
+ border-right: 2px solid;
+ border-bottom: 2px solid;
+ right: -8px;
+ top: 3px
+}
+
+      </style>
   </head>
   <body>
     <header>
