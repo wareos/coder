@@ -79,7 +79,6 @@ editor wrap {
 }
 
 editor wrap div {
-  display: flex;
   flex: 1;
 }
 
