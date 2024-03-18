@@ -1,184 +1,50 @@
 <html>
-  <head>
-    <title>[FrontEnd] Coder</title>
-    
+  <head>    
+    <title>[ Key ] Codex</title>
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
     <meta http-equiv="Pragma" content="no-cache" />
-    <meta http-equiv="Expires" content="0" />
-    
+    <meta http-equiv="Expires" content="0" />    
     <link rel="stylesheet" href="index.css"> 
-    <link href="https://css.gg/css" rel="stylesheet" />
-    <link href='raw/asset/css/codemirror.css' rel='stylesheet'>
-    <link href='raw/asset/css/codemirror.ui.css' rel='stylesheet'>
-    
-    <script src='raw/asset/js/codemirror/codemirror.js'></script>
-    <script src="raw/asset/js/codemirror/foldcode.js"></script>
-    <script src="raw/asset/js/codemirror/foldgutter.min.js"></script>
-    <script src="raw/asset/js/codemirror/indent-fold.min.js"></script>
-    <script src="raw/asset/js/codemirror/css.min.js"></script>
-    <script src="raw/asset/js/codemirror/javascript.min.js"></script>
-    <script src="raw/asset/js/codemirror/htmlmixed.min.js"></script>
-    <script src="raw/asset/js/codemirror/xml.min.js"></script>
-    
     <script src="index.js"></script>
-    <script src="/asset/js/eruda.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/eruda"></script>
     <script>eruda.init();</script>
-    <style>
-      body {
-        background: whitesmoke;
-        display: flex;
-        flex-direction: column;
-        font-family: Arial;
-        height: 100%;
-        margin: 0;
-        overflow: hidden;
-        width: 100%
-      }
-
-    body[data-theme="dark"] {
-      background: #111;
-      color: white;
-    }
-    
-    body[data-theme="dark"] textarea {
-      color: white;
-    }
-    
-    body > header ico:not([style]) {
-      height: 50px;
-      width: 50px;
-    }
-    
-    body > header avi {
-      border: 1px solid;
-      border-radius: 50%;
-      box-sizinb: border-box;
-      margin-left: auto;
-      height: 30px;
-      width: 30px;
-    }
-    
-    line.resizer {
-      display: flex;
-      width: 20px;
-    }
-    
-    @media {
-      avi {
-        align-items: center;
-        display: inline-flex;
-        justify-content: center;
-      }
-      
-      ico {
-        align-items: center;
-        display: inline-flex;
-        justify-content: center;
-      }
-    
-      iframe {
-        border: 0;
-        outline: none;
-      }
-    
-      textarea {
-        border: 0;
-        outline: 0;
-        resize: none;
-      }
-    
-      txt {
-        justify-content: center;
-      }
-    }
-    
-    editor {
-      display: flex;
-      flex: 1;
-      height: 100%;
-      width: 100%;
-    }
-    
-    editor wrap {
-      flex: 1;
-    }
-    
-    editor wrap .CodeMirror { 
-      height: 100%;
-    }
-    
-    editor iframe {
-      background: white;
-      flex: 1;
-    }
-    
-    line.resizer {
-      background-color: #555;
-      height: 100%;
-      width: 20px;
-    }
-    
-    body > header {
-      align-items: center;
-      background: #000;
-      display: flex;
-      flex-direction: row;
-      height: 50px;
-    }
-    
-    .gg-code-slash {
-     display: block;
-     position: relative;
-     box-sizing: border-box;
-     transform: rotate(15deg) scale(var(--ggs,1));
-     width: 2px;
-     height: 16px;
-     background: currentColor
-    }
-    
-    .gg-code-slash::after,
-    .gg-code-slash::before {
-     content: "";
-     display: block;
-     box-sizing: border-box;
-     position: absolute;
-     width: 8px;
-     height: 8px;
-     transform: rotate(-60deg)
-    }
-    
-    .gg-code-slash::before {
-     border-left: 2px solid;
-     border-top: 2px solid;
-     left: -8px;
-     top: 5px
-    }
-    
-    .gg-code-slash::after {
-     border-right: 2px solid;
-     border-bottom: 2px solid;
-     right: -8px;
-     top: 3px
-    }
-    </style>
   </head>
-  <body data-theme="dark">
+  <body>
     <header>
       <ico>
         <n class="gg-code-slash"></n>
       </ico>
       <txt>
-        <span>FrontEnd</span>
-        <span>Kit</span>
+        <span>KeyCode</span>
       </txt>
       <avi>
         <img>
       </avi>
     </header>
-    <editor>
-        <wrap id="editor"></wrap>
-        <line class="resizer" id="resizer"></line>
-        <iframe id="iframe"></iframe>
-    </editor>
+    <main></main>
+    <style>
+      body {
+        font-family:Arial;
+        background: #111;
+        color: white;
+      	margin: 0;
+      }
+      
+      body > header {
+        display: flex;
+      	align-items: center;
+        height: 50px;
+        padding: 10px 20px;
+      	background: #000
+      }
+      
+      body > header > avi {
+        border: 1px solid;
+        border-radius: 50%;
+        height: 30px;
+        margin-left: auto;
+        width: 30px;
+      }
+    </style>
   </body>
 </html>
