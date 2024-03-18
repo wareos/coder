@@ -27,6 +27,7 @@ body > header avi {
   border: 1px solid;
   border-radius: 50%;
   box-sizinb: border-box;
+  margin-left: auto;
   height: 30px;
   width: 30px;
 }
